@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const handlebars = require('express-handlebars');
+var util= require('util');
+var encoder = new util.TextEncoder('utf-8');
 
 const api = express.Router();
 const route = require('./routes');
